@@ -1,30 +1,32 @@
-import { DiAndroid, DiApple, DiAptana, DiBlackberry } from "react-icons/di";
+import { FaRegSquareFull, FaRegCircle } from "react-icons/fa6";
+import { PiSquaresFour } from "react-icons/pi";
+import { PiTriangleBold } from "react-icons/pi";
 
 export const routeList = [
   {
     key: "route01",
-    icon: <DiAndroid />,
+    icon: <PiTriangleBold />,
     title: "Route 1",
     url: "/route01",
     // component: pages.Registrations,
   },
   {
     key: "route02",
-    icon: <DiApple />,
+    icon: <FaRegSquareFull />,
     title: "Route 2",
     url: "/route02",
     // component: pages.Registrations,
   },
   {
     key: "route03",
-    icon: <DiAptana />,
+    icon: <FaRegCircle />,
     title: "Route 3",
     url: "/route03",
     // component: pages.Registrations,
   },
   {
     key: "route04",
-    icon: <DiBlackberry />,
+    icon: <PiSquaresFour />,
     title: "Route 4",
     url: "/route04",
     // component: pages.Registrations,
@@ -32,7 +34,7 @@ export const routeList = [
 ];
 
 export const primaryRoutes = [
-  { icon: <DiBlackberry /> },
-  { icon: <DiApple /> },
-  { icon: <DiAptana /> },
+  { icon: <FaRegCircle /> },
+  { icon: <FaRegSquareFull /> },
+  { icon: <PiSquaresFour /> },
 ];
