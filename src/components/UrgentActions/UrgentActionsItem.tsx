@@ -13,13 +13,13 @@ function UrgentActionsItem() {
         className="border p-3 space-y-2 bg-white hover:bg-slate-50 rounded-lg"
       >
         <section className="flex gap-x-2">
-          <h5 className="font-semibold">Context:</h5>
+          <p className="font-semibold">Context:</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
 
         <section className="flex justify-between items-center">
           <div className="flex gap-x-2">
-            <h5 className="font-semibold">Preferred Action: </h5>
+            <p className="font-semibold">Preferred Action: </p>
             <p>Accept</p>
           </div>
           <div className="space-x-3">
@@ -35,7 +35,7 @@ function UrgentActionsItem() {
       {showDetails && (
         <div className="mx-4 mt-[-1px]">
           <div className="border p-3 space-y-2 bg-slate-50 rounded-b-xl border-none">
-            <h5 className="font-semibold">Additional Details:</h5>
+            <p className="font-semibold">Additional Details:</p>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
