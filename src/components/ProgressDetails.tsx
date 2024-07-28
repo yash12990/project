@@ -1,16 +1,12 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 
-type Prop = {
-  showSidebar: boolean;
-};
-
-function ProgressDetails({ showSidebar }: Prop) {
+function ProgressDetails() {
   return (
     <div className="mt-4">
       <div className="flex justify-between">
         <h4 className="text-xl font-semibold ">Today's Progress</h4>
         <button className="bg-gray-300 w-20 max-h-7 rounded-md pr-2 hover:bg-gray-400 hover:text-white">
-          <IoMdArrowDropdown className="ml-auto text-2xl"/>
+          <IoMdArrowDropdown className="ml-auto text-2xl" />
         </button>
       </div>
 
