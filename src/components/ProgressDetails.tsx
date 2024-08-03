@@ -1,17 +1,27 @@
+import { Dropdown, DropdownButton } from "react-bootstrap";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 function ProgressDetails() {
   return (
     <div className="mt-4">
       <div className="flex justify-between">
+        
         <h4 className="text-xl font-semibold ">Today's Progress</h4>
-        <button className="bg-gray-300 w-20 max-h-7 rounded-md pr-2 hover:bg-gray-400 hover:text-white">
-          <IoMdArrowDropdown className="ml-auto text-2xl" />
-        </button>
+
+        <DropdownButton variant="secondary" title={""}>
+          <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+          <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+          <Dropdown.Item eventKey="3" active>
+            Active Item
+          </Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+        </DropdownButton>
+
       </div>
 
       <div
-        className={`bg-gray-100 h-48 w-[100%] mx-auto mt-3 flex gap-x-4 px-2 pt-4`}
+        className={`bg-gray-100 h-48 w-[100%] mx-auto my-auto flex gap-x-4 px-2 pt-4`}
       >
         <div className="w-1/5 h-40 bg-white p-3 flex flex-col items-center rounded-lg">
           <h5 className="text-lg font-semibold">Calls Made</h5>
